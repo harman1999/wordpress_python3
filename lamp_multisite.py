@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import socket, os, sys, shutil ,subprocess ,mysql.connector ,fileinput ,getpass 
 
 subprocess.call('yum -y update', shell=True)
