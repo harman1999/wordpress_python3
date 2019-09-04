@@ -99,8 +99,9 @@ db = {                                                                          
 for line in fileinput.input(filename, inplace=True):                                                                                        #
     line = line.rstrip('\w\n')                                                                                                              #
     print(db.get(line, line))                                                                                                               #
+###################################################### Download Wp Cli ######################################################################
+os.system("wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar")                                                 #
 ###################################################### Change premissions Wp-Cli ############################################################
-os.system("wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar")
 os.system("chmod +x wp-cli.phar")                                                                                                           #
 ###################################################### Move Wp-Cli ##########################################################################
 os.system("mv wp-cli.phar /bin/wp")                                                                                                         #
@@ -148,21 +149,21 @@ print("Your email is :"+Email)                                                  
 ###################################################### Restart Apache2 ######################################################################
 subprocess.call('systemctl restart apache2 ', shell=True)                                                                                   #
 #############################################################################################################################################
-#    U     U      BBBBBB      U     U      NN      N      TTTTTTTTTT      U     U                      11  888888               4     4     #
+#    U     U      BBBBB       U     U      NN      N      TTTTTTTTTT      U     U                      11  888888               4     4     #
 #    U     U      B    B      U     U      N N     N          T           U     U                      11 8      8              4     4     #
 #    U     U      B    B      U     U      N  N    N          T           U     U                      11 8      8              4     4     # 
 #    U     U      BBBBBB      U     U      N   N   N          T           U     U     ============     11 88888888              4444444     #
 #    U     U      B    B      U     U      N    N  N          T           U     U                      11 8      8    O O O           4     # 
 #    U     U      B    B      U     U      N     N N          T           U     U     ============     11 8      8    0   0           4     #
-#     U U U       BBBBBB       U U U       N      NN          T            U U U                       11  888888     O O 0           4     #
+#     U U U       BBBBB        U U U       N      NN          T            U U U                       11  888888     O O 0           4     #
 #############################################################################################################################################
 #############################################################################################################################################
-#    U     U      BBBBBB      U     U      NN      N      TTTTTTTTTT      U     U                      11  99999                 4     4    #
+#    U     U      BBBBB       U     U      NN      N      TTTTTTTTTT      U     U                      11  99999                 4     4    #
 #    U     U      B    B      U     U      N N     N          T           U     U                      11 9     9                4     4    #
 #    U     U      B    B      U     U      N  N    N          T           U     U                      11 9     9                4     4    #
 #    U     U      BBBBBB      U     U      N   N   N          T           U     U     ============     11  999999                4444444    #
 #    U     U      B    B      U     U      N    N  N          T           U     U                      11       9      O O O           4    #
 #    U     U      B    B      U     U      N     N N          T           U     U     ============     11       9      0   0           4    #
-#     U U U       BBBBBB       U U U       N      NN          T            U U U                       11       9      O O 0           4    #
+#     U U U       BBBBB        U U U       N      NN          T            U U U                       11       9      O O 0           4    #
 #############################################################################################################################################
 
