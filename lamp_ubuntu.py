@@ -12,7 +12,7 @@ import socket, os, sys, shutil ,subprocess  ,fileinput ,getpass                 
 ##################################################### Install Module ########################################################################
 #############################################################################################################################################
 subprocess.call('apt update ', shell=True)                                                                                                  #
-subprocess.call('apt-get install -y python3-mysql.connector',shell=True)                                                                      #
+subprocess.call('apt-get install -y python3-mysql.connector',shell=True)                                                                    #
 ##################################################### Import Mysql Module ###################################################################
 import mysql.connector                                                                                                                      #
 ############################################################################################################################################# 
@@ -23,8 +23,8 @@ subprocess.call('apt-get install -y apache2 mysql-server python-mysqldb  php php
 #############################################################################################################################################
 ##################################################### Start and enable applications for Ubuntu  #############################################
 #############################################################################################################################################
-subprocess.call('systemctl start apache2 ', shell=True)                                                                                     #
-subprocess.call('systemctl start mysql ', shell=True)                                                                                       #
+subprocess.call('service apache2 start ', shell=True)                                                                                       #
+subprocess.call('service mysql start ', shell=True)                                                                                         #
 subprocess.call('systemctl enable apache2', shell=True)                                                                                     #
 subprocess.call('systemctl enable mysql', shell=True)                                                                                       #
 #############################################################################################################################################
@@ -148,7 +148,7 @@ print("Your admin user is :"+Admin_user)                                        
 print("Your admin password is:"+Admin_password)                                                                                             #
 print("Your email is :"+Email)                                                                                                              #
 ###################################################### Restart Apache2 ######################################################################
-subprocess.call('systemctl restart apache2 ', shell=True)                                                                                   #
+subprocess.call('service apache2 restart', shell=True)                                                                                      #
 #############################################################################################################################################
 #    U     U      BBBBB       U     U      NN      N      TTTTTTTTTT      U     U                      11  888888               4     4     #
 #    U     U      B    B      U     U      N N     N          T           U     U                      11 8      8              4     4     #
