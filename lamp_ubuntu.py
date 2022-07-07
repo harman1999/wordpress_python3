@@ -114,6 +114,7 @@ os.system('cd /var/www/html/test\nwp core download --allow-root')               
 subprocess.call("cp -r   /var/www/html/test/*  /var/www/html ", shell=True)                                                                 #
 ###################################################### Delete Test Directory ################################################################
 shutil.rmtree('/var/www/html/test')                                                                                                         #
+subprocess.call('rm -f /var/www/html/index.html', shell=True)                                                                               #
 print("")                                                                                                                                   #
 #############################################################################################################################################
 ###################################################### Update Wordpress Information #########################################################
